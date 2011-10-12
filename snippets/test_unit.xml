@@ -32,13 +32,13 @@ end]]></text>
   <snippet id="assert">
     <tag>assert</tag>
     <description>testunit: assert</description>
-    <text><![CDATA[assert ${1:test}, "${2:msg}"]]></text>
+    <text><![CDATA[assert(${1:test}, "${2:msg}")]]></text>
   </snippet>
 
   <snippet id="asb">
     <tag>asb</tag>
     <description>testunit: assert_block</description>
-    <text><![CDATA[assert_block "${1:msg}" do
+    <text><![CDATA[assert_block("${1:msg}") do
   ${0}
 end]]></text>
   </snippet>
