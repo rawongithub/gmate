@@ -43,8 +43,8 @@
 
   <snippet>
     <text><![CDATA[@media ${1:media} {
-  ${0}
-}]]></text>
+  ${1}
+}${0}]]></text>
     <tag>med</tag>
     <description>@media</description>
   </snippet>
@@ -80,19 +80,19 @@
   </snippet>
 
   <snippet>
-    <text><![CDATA[@for $${1:var} from ${2:int} through ${3:int} {
+    <text><![CDATA[@for $${1:var} from ${2:1} through ${3:3} {
+  ${4}
+}${0}]]></text>
+    <tag>for</tag>
+    <description>@for-from-through</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[@for $${1:var} from ${2:1} to ${3:3} {
   ${4}
 }${0}]]></text>
     <tag>for</tag>
     <description>@for-from-to</description>
-  </snippet>
-
-  <snippet>
-    <text><![CDATA[@for $${1:var} from ${2:int} to ${3:int} {
-  ${4}
-}${0}]]></text>
-    <tag>for</tag>
-    <description>@for-from-throught</description>
   </snippet>
 
   <snippet>
@@ -507,8 +507,7 @@
   </snippet>
   <snippet>
     <text><![CDATA[{
-	/* $1 */
-	$0
+  $0
 ]]></text>
     <tag>{</tag>
     <description>properties { }</description>
@@ -583,5 +582,57 @@
     <tag>z</tag>
     <description>z-index: index</description>
   </snippet>
+
+  <!-- CSS3 -->
+
+  <snippet>
+    <text><![CDATA[border-radius: ${1:3px};]]></text>
+    <tag>border</tag>
+    <description>border-radius: radius</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[border-image: url(${1:images/});]]></text>
+    <tag>border</tag>
+    <description>border-image: url</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[box-shadow: ${1:3px} ${2:3px} ${3:3px} #${4:666};]]></text>
+    <tag>box</tag>
+    <description>box-shadow: H V B C</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[background-size: ${1:100px} ${2:200px};]]></text>
+    <tag>background</tag>
+    <description>background-size: V H</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[background-origin: ${1:content-box/padding-box/border-box};]]></text>
+    <tag>background</tag>
+    <description>background-origin: content-box/padding-box/border-box</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[text-shadow: ${1:3px} ${2:3px} ${3:3px} #${4:666};]]></text>
+    <tag>text</tag>
+    <description>text-shadow: H V B C</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[@font-face {
+  font-family: ${1:myFont};
+  src: url('${2:filename}.ttf'),
+       url('${3:filename}.eot') format("opentype") /* IE */
+  font-stretch: ${4:normal/condensed/ultra-condensed/extra-condensed/semi-condensed/expanded/semi-expanded/extra-expanded/ultra-expanded}
+  font-style: ${5:normal/italic/oblique};
+  font-weight: ${6:normal/bold/100/200/300/400/500/600/700/800/900};
+}${0}]]></text>
+    <tag>font</tag>
+    <description>@font-face {..}</description>
+  </snippet>
+
 </snippets>
 
