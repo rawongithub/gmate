@@ -95,7 +95,7 @@
     </context>
 
     <context id='at-keywords' style-ref='at-rules'>
-     <prefix>^[ \t]*@</prefix>
+      <prefix>@</prefix>
       <keyword>charset</keyword>
       <keyword>font-face</keyword>
       <keyword>media</keyword>
@@ -106,11 +106,12 @@
       <keyword>warn</keyword>
       <keyword>mixin</keyword>
       <keyword>if</keyword>
-      <keyword>else</keyword>
       <keyword>else if</keyword>
+      <keyword>else</keyword>
       <keyword>for</keyword>
       <keyword>while</keyword>
       <keyword>include</keyword>
+      <keyword>each</keyword>
     </context>
 
     <context id="selector-pseudo-elements" style-ref="function">
@@ -134,10 +135,6 @@
       <match>(?!(\$|#))(:[^\s\.]+|[^\s^\.]+(:)(?!first-child|link|visited|hover|active|focus|lang|first-line|first-letter|before|after))</match>
     </context>
 
-    <context id='else-if' style-ref='keyword'>
-      <match>(@else if)</match>
-    </context>
-
     <context id='for-loop' style-ref='keyword'>
       <start>from</start>
       <end>through</end>
@@ -145,6 +142,10 @@
         <context ref='variable' />
         <context ref='def:decimal' />
       </include>
+    </context>
+
+    <context id='each-in' style-ref='keyword'>
+      <keyword>in</keyword>
     </context>
 
     <context id="known-value" style-ref="known-value">
