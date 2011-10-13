@@ -2,7 +2,7 @@
 <snippets language="rubyonrails">
   <snippet id="forin">
     <text><![CDATA[for ${1:element} in ${2:collection}
-	${1:element}.$0
+  ${1:element}.$0
 end]]></text>
     <description>for .. in .. end</description>
     <tag>forin</tag>
@@ -24,47 +24,47 @@ end]]></text>
   </snippet>
   <snippet id="ife">
     <text><![CDATA[if ${1:condition}
-	$2
+  $2
 else
-	$3
+  $3
 end]]></text>
     <description>if .. else .. end</description>
     <tag>ife</tag>
   </snippet>
   <snippet id="if">
     <text><![CDATA[if ${1:condition}
-	$0
+  $0
 end]]></text>
     <description>if .. end</description>
     <tag>if</tag>
   </snippet>
   <snippet id="case">
     <text><![CDATA[case ${1:object}
-	when ${2:condition}
-		$0
+  when ${2:condition}
+    $0
 end]]></text>
     <description>case .. end</description>
     <tag>case</tag>
   </snippet>
   <snippet id="begin">
     <text><![CDATA[begin
-	$1
+  $1
 rescue ${2:Exception} => ${3:e}
-	$0
+  $0
 end]]></text>
     <description>begin .. rescue .. end</description>
     <tag>begin</tag>
   </snippet>
   <snippet id="class">
     <text><![CDATA[class ${1:class_name}
-	$0
+  $0
 end]]></text>
     <description>class .. end</description>
     <tag>class</tag>
   </snippet>
   <snippet id="collecto">
     <text><![CDATA[collect do |${1:element}|
-	${1:element}.$0
+  ${1:element}.$0
 end]]></text>
     <description>collect element do</description>
     <tag>collecto</tag>
@@ -76,28 +76,28 @@ end]]></text>
   </snippet>
   <snippet id="def">
     <text><![CDATA[def ${1:method_name}
-	$0
+  $0
 end]]></text>
     <description>def .. end</description>
     <tag>def</tag>
   </snippet>
   <snippet id="do">
     <text><![CDATA[do
-	$0
+  $0
 end]]></text>
     <description>do .. end</description>
     <tag>do</tag>
   </snippet>
   <snippet id="doo">
     <text><![CDATA[do |${1:object}|
-	$0
+  $0
 end]]></text>
     <description>do |object| .. end</description>
     <tag>doo</tag>
   </snippet>
   <snippet id="eacho">
     <text><![CDATA[each do |${1:element}|
-	${1:element}.$0
+  ${1:element}.$0
 end]]></text>
     <description>each element do</description>
     <tag>eacho</tag>
@@ -109,7 +109,7 @@ end]]></text>
   </snippet>
   <snippet id="each_with_indexo">
     <text><![CDATA[each_with_index do |${1:element}, ${2:idx}|
-	${1:element}.$0
+  ${1:element}.$0
 end]]></text>
     <description>each_with_index do</description>
     <tag>eachwithindexo</tag>
@@ -131,35 +131,35 @@ end]]></text>
   </snippet>
   <snippet id="injecto">
     <text><![CDATA[inject(${1:object}) do |${2:injection}, ${3:element}|
-	$0
+  $0
 end]]></text>
     <description>inject object do</description>
     <tag>injecto</tag>
   </snippet>
   <snippet id="rejecto">
     <text><![CDATA[reject do |${1:element}|
-	${1:element}.$0
+  ${1:element}.$0
 end]]></text>
     <description>reject element do</description>
     <tag>rejecto</tag>
   </snippet>
   <snippet id="selecto">
     <text><![CDATA[select do |${1:element}|
-	${1:element}.$0
+  ${1:element}.$0
 end]]></text>
     <description>select element do</description>
     <tag>selecto</tag>
   </snippet>
   <snippet id="unless">
     <text><![CDATA[unless ${1:condition}
-	$0
+  $0
 end]]></text>
     <description>unless</description>
     <tag>unless</tag>
   </snippet>
   <snippet id="when">
     <text><![CDATA[when ${1:condition}
-	$0]]></text>
+  $0]]></text>
     <description>when</description>
     <tag>when</tag>
   </snippet>
@@ -182,7 +182,7 @@ end]]></text>
     <tag>app</tag>
     <description>application_code { .. }</description>
     <text><![CDATA[if __FILE__ == $$PROGRAM_NAME
-	${0}
+  ${0}
 end]]></text>
   </snippet>
   <snippet id="Array">
@@ -194,7 +194,7 @@ end]]></text>
     <tag>rdoc</tag>
     <description>New Block</description>
     <text><![CDATA[=begin rdoc
-	${0}
+  ${0}
 =end]]></text>
   </snippet>
   <snippet id="bm">
@@ -219,11 +219,11 @@ end]]></text>
     <tag>cla</tag>
     <description>class .. &lt; DelegateClass .. initialize .. end</description>
     <text><![CDATA[class ${1:ClassName} < DelegateClass(${2:ParentClass})
-	def initialize${1}
-		super(${3:del_obj})
+  def initialize${1}
+    super(${3:del_obj})
 
-		${0}
-	end
+    ${0}
+  end
 
 
 end]]></text>
@@ -232,9 +232,9 @@ end]]></text>
     <tag>cla</tag>
     <description>class .. &lt; ParentClass .. initialize .. end</description>
     <text><![CDATA[class ${1:ClassName} < ${2:ParentClass}
-	def initialize${1}
-		${0}
-	end
+  def initialize${1}
+    ${0}
+  end
 
 
 end]]></text>
@@ -243,11 +243,11 @@ end]]></text>
     <tag>cla</tag>
     <description>class .. &lt; Struct .. initialize .. end</description>
     <text><![CDATA[class ${1:ClassName} < Struct.new(:${2:attr_names})
-	def initialize(*args)
-		super
+  def initialize(*args)
+    super
 
-		${0}
-	end
+    ${0}
+  end
 
 
 end]]></text>
@@ -256,9 +256,9 @@ end]]></text>
     <tag>cla</tag>
     <description>class .. initialize .. end</description>
     <text><![CDATA[class ${1:ClassName}
-	def initialize${1}
-		${0}
-	end
+  def initialize${1}
+    ${0}
+  end
 
 
 end]]></text>
@@ -267,24 +267,24 @@ end]]></text>
     <tag>cla</tag>
     <description>class &lt;&lt; self .. end</description>
     <text><![CDATA[class << ${1:self}
-	${0}
+  ${0}
 end]]></text>
   </snippet>
   <snippet id="cla">
     <tag>cla</tag>
     <description>class BlankSlate .. initialize .. end</description>
     <text><![CDATA[class ${1:BlankSlate}
-	instance_methods.each { |meth| undef_method(meth) unless meth =~ /\A__/ }
+  instance_methods.each { |meth| undef_method(meth) unless meth =~ /\A__/ }
 
-	def initialize${1}
-		@${3:delegate} = ${delegate_object}
+  def initialize${1}
+    @${3:delegate} = ${delegate_object}
 
-		${0}
-	end
+    ${0}
+  end
 
-	def method_missing(meth, *args, &block)
-		@${3}.send(meth, *args, &block)
-	end
+  def method_missing(meth, *args, &block)
+    @${3}.send(meth, *args, &block)
+  end
 
 
 end]]></text>
@@ -305,7 +305,7 @@ end]]></text>
     <text><![CDATA[include Comparable
 
 def <=>(other)
-	${0}
+  ${0}
 end]]></text>
   </snippet>
   <snippet id="dee">
@@ -327,7 +327,7 @@ end]]></text>
     <tag>defs</tag>
     <description>def self .. end</description>
     <text><![CDATA[def self.${1:class_method_name}
-	${0}
+  ${0}
 end]]></text>
   </snippet>
   <snippet id="deli">
@@ -409,7 +409,7 @@ end]]></text>
     <tag>elsif</tag>
     <description>elsif ...</description>
     <text><![CDATA[elsif ${1:condition}
-	${0}]]></text>
+  ${0}]]></text>
   </snippet>
   <snippet id="EmbeddedCode">
     <tag>EmbeddedCode</tag>
@@ -422,7 +422,7 @@ end]]></text>
     <text><![CDATA[include Enumerable
 
 def each(&block)
-	${0}
+  ${0}
 end]]></text>
   </snippet>
   <snippet id="fet">
@@ -517,31 +517,37 @@ end]]></text>
     <description>lambda { |args| .. }</description>
     <text><![CDATA[lambda { |${1:args}| ${0} }]]></text>
   </snippet>
-  <snippet id="log">
+
+  <snippet id="logd">
     <tag>logd</tag>
     <description>logger.debug</description>
     <text><![CDATA[logger.debug "${1:message}"${0}]]></text>
   </snippet>
-  <snippet id="log">
+
+  <snippet id="loge">
     <tag>loge</tag>
     <description>logger.error</description>
     <text><![CDATA[logger.error "${1:message}"${0}]]></text>
   </snippet>
-  <snippet id="log">
+
+  <snippet id="logf">
     <tag>logf</tag>
     <description>logger.fatal</description>
     <text><![CDATA[logger.fatal "${1:message}"${0}]]></text>
   </snippet>
-  <snippet id="log">
+
+  <snippet id="logi">
     <tag>logi</tag>
     <description>logger.info</description>
     <text><![CDATA[logger.info "${1:message}"${0}]]></text>
   </snippet>
-  <snippet id="log">
+
+  <snippet id="logw">
     <tag>logw</tag>
     <description>logger.warn</description>
     <text><![CDATA[logger.warn "${1:message}"${0}]]></text>
   </snippet>
+
   <snippet id="map">
     <tag>map</tag>
     <description>map { |e| .. }</description>
@@ -556,32 +562,6 @@ end]]></text>
     <tag>max</tag>
     <description>max { |a, b| .. }</description>
     <text><![CDATA[max { |a, b| ${0} }]]></text>
-  </snippet>
-  <snippet id="mccc">
-    <tag>mccc</tag>
-    <description>Create Several Columns</description>
-    <text><![CDATA[t.column :${1:title}, :${2:string}
-mccc${0}]]></text>
-  </snippet>
-  <snippet id="mcol">
-    <tag>mcol</tag>
-    <description>Add Column</description>
-    <text><![CDATA[add_column :${1:table}, :${2:column}, :${3:string}]]></text>
-  </snippet>
-  <snippet id="mcol">
-    <tag>mcol</tag>
-    <description>Create Column in Table</description>
-    <text><![CDATA[t.column :${1:title}, :${2:string} ${0}]]></text>
-  </snippet>
-  <snippet id="mcol">
-    <tag>mcol</tag>
-    <description>Remove Column</description>
-    <text><![CDATA[remove_column :${1:table}, :${2:column}]]></text>
-  </snippet>
-  <snippet id="mcol">
-    <tag>mcol</tag>
-    <description>Rename Column</description>
-    <text><![CDATA[rename_column :${1:column}, :${2:new_column}]]></text>
   </snippet>
   <snippet id="Md">
     <tag>Md</tag>
@@ -602,66 +582,110 @@ mccc${0}]]></text>
     <tag>mm</tag>
     <description>def method_missing .. end</description>
     <text><![CDATA[def method_missing(meth, *args, &block)
-	${0}
+  ${0}
 end]]></text>
   </snippet>
-  <snippet id="mod">
+
+  <snippet id="modc">
     <tag>mod</tag>
     <description>module .. ClassMethods .. end</description>
     <text><![CDATA[module ${1:ModuleName}
-	module ClassMethods
-		$0
-	end
+  module ClassMethods
+    $0
+  end
 
-	module InstanceMethods
+  module InstanceMethods
 
-	end
+  end
 
-	def self.included(receiver)
-		receiver.extend         ClassMethods
-		receiver.send :include, InstanceMethods
-	end
+  def self.included(receiver)
+    receiver.extend         ClassMethods
+    receiver.send :include, InstanceMethods
+  end
 end]]></text>
   </snippet>
+
   <snippet id="mod">
     <tag>mod</tag>
     <description>module .. end</description>
     <text><![CDATA[module ${1:ModuleName}
-	${0}
+  ${0}
 end]]></text>
   </snippet>
-  <snippet id="mod">
+
+  <snippet id="modf">
     <tag>mod</tag>
     <description>module .. module_function .. end</description>
     <text><![CDATA[module ${1:ModuleName}
-	module_function
+  module_function
 
-	${0}
+  ${0}
 end]]></text>
   </snippet>
-  <snippet id="mtab">
+
+  <snippet id="mtabc">
     <tag>mtab</tag>
     <description>Create Table</description>
     <text><![CDATA[create_table :${1:table} do |t|
-    ${0}
+  mccc${0}
 end]]></text>
   </snippet>
-  <snippet id="mtab">
+
+  <snippet id="mtabd">
     <tag>mtab</tag>
     <description>Drop / Create Table</description>
     <text><![CDATA[drop_table :${1:table}]]></text>
   </snippet>
-  <snippet id="mtab">
-    <tag>mtab</tag>
-    <description>Drop Table</description>
-    <text><![CDATA[drop_table :${1:table}
-${0}]]></text>
-  </snippet>
-  <snippet id="mtab">
+
+  <snippet id="mtabr">
     <tag>mtab</tag>
     <description>Rename Table</description>
     <text><![CDATA[rename_table :${1:table}, :${2:new_name}${0}]]></text>
   </snippet>
+
+  <snippet id="mccc">
+    <tag>mccc</tag>
+    <description>Create Several Columns</description>
+    <text><![CDATA[t.${1:type} :${2:name}${3:, :null => false}${4:, :default => }${0}
+mccc${0}]]></text>
+  </snippet>
+
+  <snippet id="mcola">
+    <tag>mcol</tag>
+    <description>Add Column</description>
+    <text><![CDATA[add_column :${1:table}, :${2:column}, :${3:type}${3:, :null => false}${4:, :default => }${0}]]></text>
+  </snippet>
+
+  <snippet id="mcolc">
+    <tag>mcol</tag>
+    <description>Create Column</description>
+    <text><![CDATA[t.${1:type}, :${2:name}${3:, :null => false}${4:, :default => }${0}]]></text>
+  </snippet>
+
+  <snippet id="mcolr">
+    <tag>mcol</tag>
+    <description>Remove Column</description>
+    <text><![CDATA[remove_column :${1:table}, :${2:column}]]></text>
+  </snippet>
+
+  <snippet id="mcolre">
+    <tag>mcol</tag>
+    <description>Rename Column</description>
+    <text><![CDATA[rename_column :${1:column}, :${2:new_column}]]></text>
+  </snippet>
+
+  <snippet id="addi">
+    <tag>addi</tag>
+    <description>Add Index</description>
+    <text><![CDATA[add_index :${1:table}, :${2:column}${3:, :unique => true}]]></text>
+  </snippet>
+
+  <snippet id="addim">
+    <tag>addi</tag>
+    <description>Add Multiple-Column Index </description>
+    <text><![CDATA[add_index :${1:table}, [ :${2:column}, :${3:column} ]${4:, :unique => true}]]></text>
+  </snippet>
+
   <snippet id="ope">
     <tag>ope</tag>
     <description>open("path/or/url", "w") { |io| .. }</description>
@@ -672,7 +696,7 @@ ${0}]]></text>
     <description>option(..)</description>
     <text><![CDATA[opts.on( "-${1:o}", "--${2:option}"${1},
          "${3:description}" ) do |${opt}|
-	${0}
+  ${0}
 end]]></text>
   </snippet>
   <snippet id="optp">
@@ -684,27 +708,27 @@ require "ostruct"
 options = OpenStruct.new(${1:default})
 
 ARGV.options do |opts|
-	opts.banner = "Usage:  #{File.basename($$PROGRAM_NAME)}  [OPTIONS]${1}"
+  opts.banner = "Usage:  #{File.basename($$PROGRAM_NAME)}  [OPTIONS]${1}"
 
-	opts.separator ""
-	opts.separator "Specific Options:"
+  opts.separator ""
+  opts.separator "Specific Options:"
 
-	${0}
+  ${0}
 
-	opts.separator "Common Options:"
+  opts.separator "Common Options:"
 
-	opts.on( "-h", "--help",
-	         "Show this message." ) do
-		puts opts
-		exit
-	end
+  opts.on( "-h", "--help",
+           "Show this message." ) do
+    puts opts
+    exit
+  end
 
-	begin
-		opts.parse!
-	rescue
-		puts opts
-		exit
-	end
+  begin
+    opts.parse!
+  rescue
+    puts opts
+    exit
+  end
 end
 ]]></text>
   </snippet>
@@ -963,9 +987,9 @@ end
 require "${library_file_name}"
 
 class Test${1:amp} < Test::Unit::TestCase
-	def test_${2:case_name}
-		${0}
-	end
+  def test_${2:case_name}
+    ${0}
+  end
 end]]></text>
   </snippet>
   <snippet id="tim">
@@ -991,14 +1015,14 @@ require "tc_${2:test_case_file}"
     <tag>uni</tag>
     <description>unix_filter { .. }</description>
     <text><![CDATA[ARGF.each_line${1} do |${2:line}|
-	${0}
+  ${0}
 end]]></text>
   </snippet>
   <snippet id="until">
     <tag>until</tag>
     <description>until ... end</description>
     <text><![CDATA[until ${1:condition}
-	${0}
+  ${0}
 end]]></text>
   </snippet>
   <snippet id="upt">
@@ -1037,7 +1061,7 @@ ${7:          :exclusion => ,}
 ${8:          :format => ,}
 ${9:          :inclusion => ,}
 ${10:          :length => }]]></text>
-    <description>validates alll options</description>
+    <description>validates all options</description>
   </snippet>
 
   <snippet id="vac">
@@ -1079,19 +1103,19 @@ ${10:          :length => }]]></text>
   <snippet id="vl">
     <tag>vl</tag>
     <text><![CDATA[validates :${1:attrs}, :length => { :is => ${2:value} }]]></text>
-    <description>validates length</description>
+    <description>validates length is</description>
   </snippet>
 
   <snippet id="vlmm">
     <tag>vlmm</tag>
     <text><![CDATA[validates :${1:attrs}, :length => { :minimum => ${2:val}, :maximum => ${3:val} }]]></text>
-    <description>validates length</description>
+    <description>validates length min max</description>
   </snippet>
 
   <snippet id="vlin">
     <tag>vlin</tag>
     <text><![CDATA[validates :${1:attrs}, :length => { :in => ${2:range} }]]></text>
-    <description>validates length</description>
+    <description>validates length in range</description>
   </snippet>
 
   <snippet id="vn">
@@ -1143,11 +1167,11 @@ ${10:          :length => }]]></text>
                              ${2::odd => true,}
                              ${3::even => true,}
                              ${4::only_integer => true,}
-                             ${5:equal_to => ,}
-                             ${6:greater_than => ,}
-                             ${7:less_than => ,}
-                             ${8:greater_than_or_equal_to => ,}
-                             ${9:less_than_or_equal_to => }
+                             ${5::equal_to => ,}
+                             ${6::greater_than => ,}
+                             ${7::less_than => ,}
+                             ${8::greater_than_or_equal_to => ,}
+                             ${9::less_than_or_equal_to => }
                             }]]></text>
     <description>validates numericality all options</description>
   </snippet>
@@ -1212,7 +1236,7 @@ end]]></text>
     <tag>while</tag>
     <description>while ... end</description>
     <text><![CDATA[while ${1:condition}
-	${0}
+  ${0}
 end]]></text>
   </snippet>
   <snippet id="y">
@@ -1247,8 +1271,8 @@ end]]></text>
   </snippet>
   <snippet id="insert">
     <text><![CDATA[page.insert_html :${1:bottom}, ${2:dom_id}
-								 							 :partial => '${3:partial}',
-															 :object => @${4:object} $0]]></text>
+                                :partial => '${3:partial}',
+                               :object => @${4:object} $0]]></text>
     <tag>insert</tag>
     <description>page.insert_html :bottom, 'dom_id', :partial =&gt; 'partial', :object =&gt; @object</description>
   </snippet>
@@ -1309,7 +1333,7 @@ end]]></text>
   </snippet>
   <snippet id="delay">
     <text><![CDATA[page.delay(${1:5}) do
-	$0
+  $0
 end]]></text>
     <tag>delay</tag>
     <description>page.delay(time)</description>
@@ -1575,10 +1599,10 @@ end]]></text>
     <tag>ds</tag>
     <description>default_scope</description>
   </snippet>
-  <snippet id="ana">
+  <snippet id="anaf">
     <text><![CDATA[accepts_nested_attributes_for :${1:association},
-															:allow_destroy => ${2:true|false},
-															:reject_if => lambda { |attrs| attrs.values.all?(&:blank?) }]]></text>
+                              :allow_destroy => ${2:true|false},
+                              :reject_if => lambda { |attrs| attrs.values.all?(&:blank?) }]]></text>
     <tag>ana</tag>
     <description>accepts_nested_attributes_for</description>
   </snippet>
@@ -1630,26 +1654,26 @@ end]]></text>
   </snippet>
   <snippet>
     <text><![CDATA[Gem::Specification.new do |gem|
-	gem.name = '${1:name}'
-	gem.version = '${2:0.0.1}'
-	gem.date = Date.today.to_s
+  gem.name = '${1:name}'
+  gem.version = '${2:0.0.1}'
+  gem.date = Date.today.to_s
 
-	# gem.add_dependency 'hpricot', '~> 0.8.2'
-	# gem.add_development_dependency 'rspec', '~> 1.2.9'
+  # gem.add_dependency 'hpricot', '~> 0.8.2'
+  # gem.add_development_dependency 'rspec', '~> 1.2.9'
 
-	gem.summary = "${3:summary}"
-	gem.description = "${4:Longer description.}"
+  gem.summary = "${3:summary}"
+  gem.description = "${4:Longer description.}"
 
-	gem.authors = ['${5:full_name}']
-	gem.email = '${6:email}'
-	gem.homepage = '${7:url}'
+  gem.authors = ['${5:full_name}']
+  gem.email = '${6:email}'
+  gem.homepage = '${7:url}'
 
-	gem.rubyforge_project = nil
-	gem.has_rdoc = true
-	gem.rdoc_options = ['--main', 'README.rdoc', '--charset=UTF-8']
-	gem.extra_rdoc_files = ['README.rdoc', 'LICENSE', 'CHANGELOG.rdoc']
+  gem.rubyforge_project = nil
+  gem.has_rdoc = true
+  gem.rdoc_options = ['--main', 'README.rdoc', '--charset=UTF-8']
+  gem.extra_rdoc_files = ['README.rdoc', 'LICENSE', 'CHANGELOG.rdoc']
 
-	gem.files = Dir['Rakefile', '{bin,lib,man,test,spec}/**/*', 'README*', 'LICENSE*'] & \\`git ls-files -z\\`.split("\\0")
+  gem.files = Dir['Rakefile', '{bin,lib,man,test,spec}/**/*', 'README*', 'LICENSE*'] & \\`git ls-files -z\\`.split("\\0")
 end
 ]]></text>
     <tag>gemspec</tag>
