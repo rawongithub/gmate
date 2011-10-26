@@ -28,11 +28,12 @@ end]]></text>
   </snippet>
 
   <!-- Test::Unit::Assertions -->
+  <!-- MiniTest::Assertions -->
 
   <snippet id="assert">
     <tag>assert</tag>
     <description>testunit: assert</description>
-    <text><![CDATA[assert(${1:test}, "${2:msg}")]]></text>
+    <text><![CDATA[assert(${1:test})]]></text>
   </snippet>
 
   <snippet id="asb">
@@ -71,13 +72,25 @@ end]]></text>
   <snippet id="asid">
     <tag>asid</tag>
     <description>testunit: assert_in_delta(..)</description>
-    <text><![CDATA[assert_in_delta(${1:expected_float}, ${2:actual_float}, ${3:delta}, "${4:msg}")]]></text>
+    <text><![CDATA[assert_in_delta(${1:expected_float}, ${2:actual_float}, ${3:0.001})]]></text>
+  </snippet>
+
+  <snippet id="asi">
+    <tag>asi</tag>
+    <description>testunit: assert_includes(..)</description>
+    <text><![CDATA[assert_includes(${1:collection}, ${2:obj})]]></text>
+   </snippet>
+
+  <snippet id="asie">
+    <tag>asie</tag>
+    <description>testunit: assert_in_epsilon(..)</description>
+    <text><![CDATA[assert_in_epsilon(${1:expected_float}, ${2:actual_float}, ${3:0.001})]]></text>
   </snippet>
 
   <snippet id="asio">
     <tag>asio</tag>
     <description>testunit: assert_instance_of(..)</description>
-    <text><![CDATA[assert_instance_of(${1:klass}, ${2:obj}, "${3:msg}")]]></text>
+    <text><![CDATA[assert_instance_of(${1:klass}, ${2:obj})]]></text>
   </snippet>
 
   <snippet id="asko">
@@ -178,14 +191,14 @@ end]]></text>
     <tag>asv</tag>
   </snippet>
   <snippet id="asd">
-    <text><![CDATA[assert_difference(${1:expr}, ${2:diff}, "${3:msg}") do
+    <text><![CDATA[assert_difference(${1:expr}, ${2:diff}) do
   ${0}
 end]]></text>
     <description>testunit: assert_difference</description>
     <tag>asd</tag>
   </snippet>
   <snippet id="asnd">
-    <text><![CDATA[assert_no_difference(${1:expr}, "${2:msg}") do
+    <text><![CDATA[assert_no_difference(${1:expr}) do
   ${0}
 end]]></text>
     <description>testunit: assert_no_difference</description>
@@ -202,7 +215,7 @@ end]]></text>
     <tag>asg</tag>
   </snippet>
   <snippet id="asres">
-    <text><![CDATA[assert_response(:${1:success/redirect/missing/error}, "${2:msg}")]]></text>
+    <text><![CDATA[assert_response(:${1:success/redirect/missing/error})]]></text>
     <description>testunit: assert_response</description>
     <tag>asres</tag>
   </snippet>
@@ -217,4 +230,3 @@ end]]></text>
     <tag>astem</tag>
   </snippet>
 </snippets>
-
