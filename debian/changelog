@@ -1,3 +1,39 @@
+gedit-gmate (0.10~uorppa5) oneiric; urgency=low
+  * Move plugins to subdirs.
+  * Fix background color for selection in Wombat style.
+  * Add “do” keyword to CoffeeScript.
+
+ -- Andrey Sitnik <andrey@sitnik.ru>  Fri, 23 Dec 2011 08:58:48 +0700
+
+gedit-gmate (0.10~uorppa4) oneiric; urgency=low
+  * Rewrite build script to support Restore Tab plugin.
+
+ -- Andrey Sitnik <andrey@sitnik.ru>  Fri, 18 Nov 2011 02:01:51 +0900
+
+gedit-gmate (0.10~uorppa2) oneiric; urgency=low
+  * Add dependences for Restore Tabs.
+
+ -- Andrey Sitnik <andrey@sitnik.ru>  Thu, 17 Nov 2011 21:52:04 +0900
+
+gedit-gmate (0.10~uorppa1) oneiric; urgency=low
+  * Add Snapopen plugin for gedit 3.
+  * Add Whitespace Terminator plugin for gedit3.
+  * Add Smart Highlight plugin for gedit3.
+  * Add Restore Tabs plugin for gedit3
+  * Add Pair Char Completion plugin for gedit3.
+  * Add TabSwitch plugin for gedit 3.
+  * Fix install script for gedit3.
+  * Fix factorygirl snippets.
+  * Add yet another railscasts style.
+  * Updated and improved rubyonrails snippets.
+
+ -- Andrey Sitnik <andrey@sitnik.ru>  Tue, 15 Nov 2011 14:06:33 +0700
+
+gedit-gmate (0.10~uorppa0) oneiric; urgency=low
+  * Support for gedit 3.
+
+ -- Andrey Sitnik <andrey@sitnik.ru>  Sun, 02 Oct 2011 02:20:19 +0400
+
 gedit-gmate (0.9.20~uorppa0) natty; urgency=low
   * Add Highlight Edited Lines plugin.
   * Add Text Map plugin.
