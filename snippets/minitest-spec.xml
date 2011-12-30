@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="rubyonrails">
+
+  <!-- MiniTest::Spec -->
+
+  <snippet id="after">
+    <tag>after</tag>
+    <description>minitest-spec: after</description>
+    <text><![CDATA[after do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="before">
+    <tag>before</tag>
+    <description>minitest-spec: before</description>
+    <text><![CDATA[before do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="bench">
+    <tag>bench</tag>
+    <description>minitest-spec: bench</description>
+    <text><![CDATA[bench "${1:name}" do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="benchpc">
+    <tag>benchpc</tag>
+    <description>minitest-spec: bench_performance_constant</description>
+    <text><![CDATA[bench_performance_constant "${1:name}" do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="benchpe">
+    <tag>benchpe</tag>
+    <description>minitest-spec: bench_performance_exponential</description>
+    <text><![CDATA[bench_performance_exponential "${1:name}" do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="benchpl">
+    <tag>benchpl</tag>
+    <description>minitest-spec: bench_performance_linear</description>
+    <text><![CDATA[bench_performance_linear "${1:name}" do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="benchr">
+    <tag>benchr</tag>
+    <description>minitest-spec: bench_range</description>
+    <text><![CDATA[bench_range "${1:name}" do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="context">
+    <tag>context</tag>
+    <description>minitest-spec: context</description>
+    <text><![CDATA[context "${1:description}" do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="describe">
+    <tag>describe</tag>
+    <description>minitest-spec: describe</description>
+    <text><![CDATA[describe "${1:description}" do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="it">
+    <tag>it</tag>
+    <description>minitest-spec: it</description>
+    <text><![CDATA[it "${1:desc}" do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="let">
+    <tag>let</tag>
+    <description>minitest-spec: let</description>
+    <text><![CDATA[let ${1:name} do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="rst">
+    <tag>rst</tag>
+    <description>minitest-spec: register_spec_type</description>
+    <text><![CDATA[register_spec_type ${1:args} do
+  $0
+end]]></text>
+  </snippet>
+
+  <snippet id="subject">
+    <tag>subject</tag>
+    <description>minitest-spec: subject</description>
+    <text><![CDATA[subject do
+  $0
+end]]></text>
+  </snippet>
+
+  <!-- MiniTest::Expectations -->
+
+  <snippet id="mb">
+    <tag>mb</tag>
+    <description>minitest-spec: must_be</description>
+    <text><![CDATA[must_be ${0:exp}]]></text>
+  </snippet>
+
+  <snippet id="mbe">
+    <tag>mbe</tag>
+    <description>minitest-spec: must_be_empty</description>
+    <text><![CDATA[must_be_empty]]></text>
+  </snippet>
+
+  <snippet id="mbio">
+    <tag>mbio</tag>
+    <description>minitest-spec: must_be_instance_of</description>
+    <text><![CDATA[must_be_instance_of ${0:cls}]]></text>
+  </snippet>
+
+  <snippet id="mbko">
+    <tag>mbko</tag>
+    <description>minitest-spec: must_be_kind_of</description>
+    <text><![CDATA[must_be_kind_of ${0:mod}]]></text>
+  </snippet>
+
+  <snippet id="mbn">
+    <tag>mbn</tag>
+    <description>minitest-spec: must_be_nil</description>
+    <text><![CDATA[must_be_nil]]></text>
+  </snippet>
+
+  <snippet id="mbsa">
+    <tag>mbsa</tag>
+    <description>minitest-spec: must_be_same_as</description>
+    <text><![CDATA[must_be_same_as ${0:exp}]]></text>
+  </snippet>
+
+  <snippet id="mbs">
+    <tag>mbs</tag>
+    <description>minitest-spec: must_be_silent</description>
+    <text><![CDATA[must_be_silent]]></text>
+  </snippet>
+
+  <snippet id="mbct">
+    <tag>mbct</tag>
+    <description>minitest-spec: must_be_close_to</description>
+    <text><![CDATA[must_be_close_to ${1:exp}, ${2:delta}]]></text>
+  </snippet>
+
+  <snippet id="mbwe">
+    <tag>mbwe</tag>
+    <description>minitest-spec: must_be_within_epsilon</description>
+    <text><![CDATA[must_be_within_epsilon ${1:exp}, ${2:epsilon}]]></text>
+  </snippet>
+
+  <snippet id="me">
+    <tag>me</tag>
+    <description>minitest-spec: must_equal</description>
+    <text><![CDATA[must_equal ${1:exp}]]></text>
+  </snippet>
+
+  <snippet id="mi">
+    <tag>mi</tag>
+    <description>minitest-spec: must_include</description>
+    <text><![CDATA[must_include ${1:obj}]]></text>
+  </snippet>
+
+  <snippet id="mm">
+    <tag>mm</tag>
+    <description>minitest-spec: must_match</description>
+    <text><![CDATA[must_match ${1:exp}]]></text>
+  </snippet>
+
+  <snippet id="mo">
+    <tag>mo</tag>
+    <description>minitest-spec: must_output</description>
+    <text><![CDATA[must_output ${1:exp}]]></text>
+  </snippet>
+
+  <snippet id="mr">
+    <tag>mr</tag>
+    <description>minitest-spec: must_raise</description>
+    <text><![CDATA[must_raise ${1:exeption}]]></text>
+  </snippet>
+
+  <snippet id="mrt">
+    <tag>mrt</tag>
+    <description>minitest-spec: must_respond_to</description>
+    <text><![CDATA[must_respond_to ${1:meth}]]></text>
+  </snippet>
+
+  <snippet id="mt">
+    <tag>mt</tag>
+    <description>minitest-spec: must_throw</description>
+    <text><![CDATA[must_throw ${1:sym}]]></text>
+  </snippet>
+
+  <snippet id="wb">
+    <tag>wb</tag>
+    <description>minitest-spec: wont_be</description>
+    <text><![CDATA[wont_be ${0:exp}]]></text>
+  </snippet>
+
+  <snippet id="wbe">
+    <tag>wbe</tag>
+    <description>minitest-spec: wont_be_empty</description>
+    <text><![CDATA[wont_be_empty]]></text>
+  </snippet>
+
+  <snippet id="wbio">
+    <tag>wbio</tag>
+    <description>minitest-spec: wont_be_instance_of</description>
+    <text><![CDATA[wont_be_instance_of ${0:cls}]]></text>
+  </snippet>
+
+  <snippet id="wbko">
+    <tag>wbko</tag>
+    <description>minitest-spec: wont_be_kind_of</description>
+    <text><![CDATA[wont_be_kind_of ${0:mod}]]></text>
+  </snippet>
+
+  <snippet id="wbn">
+    <tag>wbn</tag>
+    <description>minitest-spec: wont_be_nil</description>
+    <text><![CDATA[wont_be_nil]]></text>
+  </snippet>
+
+  <snippet id="wbsa">
+    <tag>wbsa</tag>
+    <description>minitest-spec: wont_be_same_as</description>
+    <text><![CDATA[wont_be_same_as ${0:exp}]]></text>
+  </snippet>
+
+  <snippet id="wbs">
+    <tag>wbs</tag>
+    <description>minitest-spec: wont_be_silent</description>
+    <text><![CDATA[wont_be_silent]]></text>
+  </snippet>
+
+  <snippet id="wbct">
+    <tag>wbct</tag>
+    <description>minitest-spec: wont_be_close_to</description>
+    <text><![CDATA[wont_be_close_to ${1:exp}, ${2:delta}]]></text>
+  </snippet>
+
+  <snippet id="wbwe">
+    <tag>wbwe</tag>
+    <description>minitest-spec: wont_be_within_epsilon</description>
+    <text><![CDATA[wont_be_within_epsilon ${1:exp}, ${2:epsilon}]]></text>
+  </snippet>
+
+  <snippet id="we">
+    <tag>we</tag>
+    <description>minitest-spec: wont_equal</description>
+    <text><![CDATA[wont_equal ${1:exp}]]></text>
+  </snippet>
+
+  <snippet id="wi">
+    <tag>wi</tag>
+    <description>minitest-spec: wont_include</description>
+    <text><![CDATA[wont_include ${1:obj}]]></text>
+  </snippet>
+
+  <snippet id="wm">
+    <tag>wm</tag>
+    <description>minitest-spec: wont_match</description>
+    <text><![CDATA[wont_match ${1:exp}]]></text>
+  </snippet>
+
+  <snippet id="wrt">
+    <tag>wrt</tag>
+    <description>minitest-spec: wont_respond_to</description>
+    <text><![CDATA[wont_respond_to ${1:meth}]]></text>
+  </snippet>
+
+</snippets>
