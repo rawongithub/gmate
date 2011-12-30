@@ -109,8 +109,8 @@
   <style name="rubyonrails:simple-interpolation" foreground="#519f50"/>
   <style name="rubyonrails:special-variable" foreground="#cc7833"/>
   <style name="rubyonrails:symbol" foreground="#6d9cbe"/>
-  <style name="search-match"  background="#ffffcc" foreground="#666666"/>
-  <style name="selection" background="#ffff33" foreground="#000000"/>
+  <style name="search-match"  background="#bdbdbd" foreground="#666666"/>
+  <style name="selection" background="#F2F2A0" foreground="#000000"/>
   <style name="text" foreground="#e6e1dc" background="#000000"/>
   <style name="xml:attribute-name" foreground="#e8bf6a"/>
   <style name="xml:doctype" foreground="#e8bf6a"/>
